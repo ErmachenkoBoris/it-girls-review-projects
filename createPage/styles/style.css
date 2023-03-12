@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(233, 233, 233);
+  font-family: "Poiret One", sans-serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  overflow-x: hidden;
+  position: relative;
+}
+body .container {
+  max-width: 1200px;
+  margin: auto;
+}
+body .container #patientContainer {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
+  opacity: 95%;
+}
+body .container .patient {
+  width: 270px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #a8c1e1;
+  font-family: "Poiret One", sans-serif;
+  box-shadow: 0 4px 16px rgb(163, 163, 163);
+  font-weight: bolder;
+  font-size: 16px;
+  margin: 10px;
+  opacity: 85%;
+}
+body .container .patient-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+body .container .avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px rgb(163, 163, 163);
+}
+body ul {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body .navbar {
+  padding-top: 2rem;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+body .logo {
+  width: 50px;
+  height: 50px;
+}
+body .nav-links {
+  display: flex;
+}
+body .nav-links li a {
+  color: #555555;
+  padding: 0 1.1rem;
+}
+body .nav-links li a:hover {
+  color: #000000;
+  font-weight: bold;
+}
+body #showcase {
+  width: 1200px;
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5px;
+}
+body #showcase .showcase-text {
+  width: 1100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+}
+body #showcase .showcase-text h1 {
+  font-size: 2.5rem;
+}
+body #showcase .showcase-text h3 {
+  opacity: 0.9;
+  margin-top: 15px;
+}
+body #showcase .showcase-btn {
+  width: 200px;
+  height: 45px;
+  border: 0.1rem solid #6588b9;
+  border-radius: 20px;
+  background-color: rgb(233, 233, 233);
+  cursor: pointer;
+  outline: none;
+  color: #6588b9;
+  font-weight: bold;
+}
+body #showcase .showcase-btn:hover {
+  background-color: #6588b9;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+body #services {
+  max-width: 1200px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+body #services .service-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10rem;
+  margin: 10px;
+  margin-top: 30px;
+}
+body #services .service-header hr {
+  width: 1000px;
+  height: 2px;
+  margin-top: 10px;
+  font-weight: bold;
+  background-color: #000000;
+}
+body #services .service-header h1 {
+  font-size: 2.1rem;
+  word-spacing: 4px;
+}
+body #services .service-header p {
+  opacity: 0.7;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+body #services .service-btn {
+  width: 200px;
+  margin: 1rem 0;
+  padding: 0.8rem 3rem;
+  border: 0.1rem solid #6588b9;
+  border-radius: 20px;
+  background-color: rgb(238, 233, 233);
+  cursor: pointer;
+  outline: none;
+  color: #6588b9;
+  font-weight: bold;
+}
+body #services .service-btn:hover {
+  background-color: #6588b9;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}/*# sourceMappingURL=style.css.map */
