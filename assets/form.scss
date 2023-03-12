@@ -1,0 +1,162 @@
+@import "_variables.scss";
+
+#modalcontainer {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  max-width: 90%;
+  height: 800px;
+  max-height: 100%;
+  z-index: 1010;
+  overflow: auto;
+  font-style: normal;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.text {
+  font-weight: 600;
+  font-size: 14px;
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.list-text {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #eceeef;
+  opacity: 0.7;
+}
+
+#close {
+  float: right;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  opacity: 0.7;
+}
+
+#close:focus,
+#close:hover {
+  color: #000;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to right, oldlace, rgb(245, 233, 211));
+  border: $border;
+  border-radius: 0.3rem;
+}
+
+.modal-body {
+  flex: 1 1 auto;
+  padding: 0 20px;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.blocks-position {
+  width: 100%;
+  margin: 1%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+.list-text {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 400px;
+  padding: 7px 10px;
+  margin: 5px;
+  outline: none;
+  border: $border;
+  background: $white;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+  box-shadow: inset 0 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.buttonModalOpen,
+.buttonRegistration,
+.buttonAddPost,
+.publish {
+  display: block;
+  padding: 10px;
+  margin: 10px auto;
+  background: $green;
+  border: $border;
+  border-radius: 5px;
+  color: $white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.buttonRegistration {
+  width: 80%;
+
+  @media (min-width: $tablet) {
+    width: 50%;
+  }
+}
+
+.buttonModalOpen,
+.buttonAddPost {
+  width: 200px;
+}
+
+.buttonAddPost {
+  margin: 10px;
+}
+
+.errorMessage {
+  color: $error;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 3px 10px;
+}
+
+.scrollDisabling {
+  overflow: hidden;
+}
